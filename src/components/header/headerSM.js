@@ -9,7 +9,7 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Drawer from '@material-ui/core/Drawer';
-import Link from '@material-ui/core/Link';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -27,6 +27,10 @@ const useStyles = makeStyles(theme => ({
   },
   fullList: {
     width: 'auto'
+  },
+  link: {
+    textDecoration: 'none',
+    color: 'black'
   }
 }));
 
@@ -37,6 +41,7 @@ function HeaderSM(props) {
     left: false
   });
   const toggleDrawer = open => event => {
+    debugger;
     if (
       event.type === 'keydown' &&
       (event.key === 'Tab' || event.key === 'Shift')
@@ -50,13 +55,13 @@ function HeaderSM(props) {
     <div
       className={classes.list}
       role="presentation"
-      onClick={toggleDrawer(side, false)}
-      onKeyDown={toggleDrawer(side, false)}
+      onClick={toggleDrawer(false)}
+      onKeyDown={toggleDrawer(false)}
     >
       <List>
         {Object.keys(buttons).map((buttonName, index) => (
           <ListItem button key={index}>
-            <Link color="inherit" href={buttons[buttonName]}>
+            <Link className={classes.link} to={buttons[buttonName]}>
               <ListItemText primary={buttonName} />
             </Link>
           </ListItem>
