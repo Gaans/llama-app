@@ -4,7 +4,12 @@ import HeaderMD from './headerMD';
 import HeaderSM from './headerSM';
 
 function Header(props) {
-  const buttonName = ['Facts', 'Location', 'Powers', 'Save', 'About'];
+  const buttonName = {
+    Facts: '/facts',
+    Location: '/location',
+    Powers: '/power',
+    About: '/about'
+  };
   return (
     <div>
       <Box display={{ xs: 'block', md: 'none' }}>

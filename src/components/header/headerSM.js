@@ -9,6 +9,7 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Drawer from '@material-ui/core/Drawer';
+import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -31,7 +32,7 @@ const useStyles = makeStyles(theme => ({
 
 function HeaderSM(props) {
   const classes = useStyles();
-  const { title, buttons } = props;
+  const { buttons } = props;
   const [state, setState] = React.useState({
     left: false
   });
@@ -53,9 +54,11 @@ function HeaderSM(props) {
       onKeyDown={toggleDrawer(side, false)}
     >
       <List>
-        {buttons.map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} />
+        {Object.keys(buttons).map((buttonName, index) => (
+          <ListItem button key={index}>
+            <Link color="inherit" href={buttons[buttonName]}>
+              <ListItemText primary={buttonName} />
+            </Link>
           </ListItem>
         ))}
       </List>

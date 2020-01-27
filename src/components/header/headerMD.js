@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import PropTypes from 'prop-types';
 import Avatar from '@material-ui/core/Avatar';
+import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -29,15 +30,19 @@ function HeaderMD(props) {
       <AppBar position="fixed">
         <Toolbar>
           <Box m={1}>
-            <Avatar alt="Llama" src="/iconAvatar.png" />
+            <Link href="/">
+              <Avatar alt="Llama" src="/iconAvatar.png" />
+            </Link>
           </Box>
           <Typography variant="h6" className={classes.title}>
             {title}
           </Typography>
-          {buttons.map((buttonName, index) => {
+          {Object.keys(buttons).map((buttonName, index) => {
             return (
               <Button color="inherit" key={index}>
-                {buttonName}
+                <Link color="inherit" href={buttons[buttonName]}>
+                  {buttonName}
+                </Link>
               </Button>
             );
           })}
@@ -55,7 +60,7 @@ HeaderMD.defaultProps = {
 
 HeaderMD.propsTypes = {
   title: PropTypes.string,
-  buttons: PropTypes.arrayOf(PropTypes.string)
+  buttons: PropTypes.Object
 };
 
 export default HeaderMD;
