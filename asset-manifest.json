@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/llama-app/static/css/main.5bed5427.chunk.css",
-    "main.js": "/llama-app/static/js/main.c1b51550.chunk.js",
-    "main.js.map": "/llama-app/static/js/main.c1b51550.chunk.js.map",
+    "main.js": "/llama-app/static/js/main.bea97fb5.chunk.js",
+    "main.js.map": "/llama-app/static/js/main.bea97fb5.chunk.js.map",
     "runtime-main.js": "/llama-app/static/js/runtime-main.7a35941b.js",
     "runtime-main.js.map": "/llama-app/static/js/runtime-main.7a35941b.js.map",
     "static/js/2.943e7bac.chunk.js": "/llama-app/static/js/2.943e7bac.chunk.js",
     "static/js/2.943e7bac.chunk.js.map": "/llama-app/static/js/2.943e7bac.chunk.js.map",
     "index.html": "/llama-app/index.html",
-    "precache-manifest.ecc28b6a66a44c8498d51b2b55b95fb1.js": "/llama-app/precache-manifest.ecc28b6a66a44c8498d51b2b55b95fb1.js",
+    "precache-manifest.bbf2924ea5e78fc8f549e1bacb13f4f5.js": "/llama-app/precache-manifest.bbf2924ea5e78fc8f549e1bacb13f4f5.js",
     "service-worker.js": "/llama-app/service-worker.js",
     "static/css/main.5bed5427.chunk.css.map": "/llama-app/static/css/main.5bed5427.chunk.css.map",
     "static/js/2.943e7bac.chunk.js.LICENSE": "/llama-app/static/js/2.943e7bac.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.7a35941b.js",
     "static/js/2.943e7bac.chunk.js",
     "static/css/main.5bed5427.chunk.css",
-    "static/js/main.c1b51550.chunk.js"
+    "static/js/main.bea97fb5.chunk.js"
   ]
 }
