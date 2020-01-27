@@ -1,23 +1,16 @@
 import React from 'react';
-import { Box } from '@material-ui/core';
+import { Box, AppBar, Toolbar } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles(theme => ({
-  offset: theme.mixins.toolbar,
-  spacing: value => value ** theme.spacing(2),
-  root: {
-    background: '#3f51b5'
+  footer: {
+    position: 'relative',
+    top: 'auto',
+    bottom: '0'
   },
-  space: {
-    height: '50px'
-  },
-  color: {
-    color: '#fff'
-  },
-  padding: {
-    paddingBottom: '1vh'
+  developed: {
+    flex: 1
   }
 }));
 
@@ -26,21 +19,18 @@ function Footer() {
 
   return (
     <div>
-      <Box mt={2} className={classes.root}>
-        <Grid container direction="column" className={classes.spacing}>
-          <Grid item>
-            <Box className={classes.space}></Box>
-          </Grid>
-          <Grid item className={classes.padding}>
+      <Box mt={2}>
+        <AppBar className={classes.footer}>
+          <Toolbar>
             <Typography
-              variant={'body1'}
-              align={'center'}
-              className={classes.color}
+              variant="h6"
+              align="center"
+              className={classes.developed}
             >
-              Developed by Ganesh
+              {'\u00a9 Developed by Ganesh'}
             </Typography>
-          </Grid>
-        </Grid>
+          </Toolbar>
+        </AppBar>
       </Box>
     </div>
   );

@@ -41,7 +41,6 @@ function HeaderSM(props) {
     left: false
   });
   const toggleDrawer = open => event => {
-    debugger;
     if (
       event.type === 'keydown' &&
       (event.key === 'Tab' || event.key === 'Shift')

@@ -16,8 +16,12 @@ import About from './components/about/about';
 import Footer from './components/footer/footer';
 
 const useStyles = makeStyles(theme => ({
+  app: {
+    minHeight: '100%'
+  },
   root: {
-    flexGrow: 1
+    flexGrow: 1,
+    minHeight: '100vh'
   },
   control: {
     padding: theme.spacing(2)
@@ -60,14 +64,14 @@ const useStyles = makeStyles(theme => ({
 function App() {
   const classes = useStyles();
   return (
-    <>
+    <div className={classes.app}>
       <Router>
         <Grid container className={classes.root} direction="column">
           <Grid item>
             {/*Header menu*/}
             <Header />
           </Grid>
-          <Grid item>
+          <Grid item style={{ flex: 1 }}>
             {/* contents*/}
             <div className={classes.imageContainer}>
               <div className={classes.image}></div>
@@ -95,7 +99,7 @@ function App() {
           </Grid>
         </Grid>
       </Router>
-    </>
+    </div>
   );
 }
 
