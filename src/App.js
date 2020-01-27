@@ -33,6 +33,9 @@ const useStyles = makeStyles(theme => ({
     backgroundPosition: 'center center',
     backgroundSize: 'cover',
     backgroundAttachment: 'fixed',
+    '-webkit-background-size': 'cover',
+    '-moz-background-size': 'cover',
+    '-o-background-size': 'cover',
     flexGrow: 1,
     width: '100%',
     height: '100%'
