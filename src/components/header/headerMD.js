@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import PropTypes from 'prop-types';
 import Avatar from '@material-ui/core/Avatar';
-import Link from '@material-ui/core/Link';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -19,7 +19,11 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1
   },
   offset: theme.mixins.toolbar,
-  spacing: value => value ** theme.spacing(2)
+  spacing: value => value ** theme.spacing(2),
+  link: {
+    color: '#FFF',
+    textDecoration: 'none'
+  }
 }));
 
 function HeaderMD(props) {
@@ -30,8 +34,8 @@ function HeaderMD(props) {
       <AppBar position="fixed">
         <Toolbar>
           <Box m={1}>
-            <Link href="/">
-              <Avatar alt="Llama" src="/iconAvatar.png" />
+            <Link to="/">
+              <Avatar alt="Llama" src="./images/iconAvatar.png" />
             </Link>
           </Box>
           <Typography variant="h6" className={classes.title}>
@@ -39,8 +43,8 @@ function HeaderMD(props) {
           </Typography>
           {Object.keys(buttons).map((buttonName, index) => {
             return (
-              <Button color="inherit" key={index}>
-                <Link color="inherit" href={buttons[buttonName]}>
+              <Button key={index}>
+                <Link className={classes.link} to={buttons[buttonName]}>
                   {buttonName}
                 </Link>
               </Button>

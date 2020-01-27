@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
   },
   image: {
     display: 'block',
-    background: 'url(/llama.jpg)',
+    background: 'url(./images/llama.jpg)',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center center',
     backgroundSize: 'cover',
@@ -61,39 +61,40 @@ function App() {
   const classes = useStyles();
   return (
     <>
-      <Grid container className={classes.root} direction="column">
-        <Grid item>
-          {/*Header menu*/}
-          <Header />
-        </Grid>
-        <Grid item>
-          {/* contents*/}
-          <div className={classes.imageContainer}>
-            <div className={classes.image}></div>
-            <Typography
-              className={classes.text}
-              fontWeight={500}
-              variant={'h2'}
-              noWrap
-            >
-              The <br />
-              Majestic Llama
-            </Typography>
-          </div>
-          <Router>
+      <Router>
+        <Grid container className={classes.root} direction="column">
+          <Grid item>
+            {/*Header menu*/}
+            <Header />
+          </Grid>
+          <Grid item>
+            {/* contents*/}
+            <div className={classes.imageContainer}>
+              <div className={classes.image}></div>
+              <Typography
+                className={classes.text}
+                fontWeight={500}
+                variant={'h2'}
+                noWrap
+              >
+                The <br />
+                Majestic Llama
+              </Typography>
+            </div>
+
             <Switch>
-              <Route path="/facts">{<Fact />}</Route>
-              <Route path="/power">{<Power />}</Route>
-              <Route path="/location">{<Location />}</Route>
-              <Route path="/about">{<About />}</Route>
-              <Route path="/">{<Home />}</Route>
+              <Route path="/facts" component={Fact} />
+              <Route path="/power" component={Power} />
+              <Route path="/location" component={Location} />
+              <Route path="/about" component={About} />
+              <Route path="/" component={Home} />>
             </Switch>
-          </Router>
+          </Grid>
+          <Grid item>
+            <Footer />
+          </Grid>
         </Grid>
-        <Grid item>
-          <Footer />
-        </Grid>
-      </Grid>
+      </Router>
     </>
   );
 }

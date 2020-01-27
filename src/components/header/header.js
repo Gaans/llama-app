@@ -5,6 +5,7 @@ import HeaderSM from './headerSM';
 
 function Header(props) {
   const buttonName = {
+    Home: '/',
     Facts: '/facts',
     Location: '/location',
     Powers: '/power',

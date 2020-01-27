@@ -161,7 +161,7 @@ function LlamaTable(props) {
           avatar={
             <Avatar
               alt="Remy Sharp"
-              src="/llamaCard.png"
+              src="./images/llamaCard.png"
               className={classes.large}
             />
           }

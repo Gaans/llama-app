@@ -32,21 +32,6 @@ function Home(props) {
             </Container>
           </Box>
         </Grid>
-        {/* <Grid item className={classes.item2} xs={12} md={4}>
-          <Box mt={3} display={{ xs: 'none', md: 'block' }}>
-            <LlamaTable />
-          </Box>
-          <Box
-            mt={3}
-            display={{ xs: 'block', md: 'none' }}
-            justifyContent="center"
-            alignItems="flex-end"
-          >
-            <Container maxWidth="sm">
-              <LlamaTable />
-            </Container>
-          </Box>
-        </Grid> */}
       </Grid>
     </>
   );

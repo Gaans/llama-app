@@ -64,7 +64,7 @@ function Powerpara() {
         </Typography>
       </Box>
       <Box mt={3}>
-        <img src="/llamaspit.jpg" alt="Llama spit" width="100%" />
+        <img src="./images/llamaspit.jpg" alt="Llama spit" width="100%" />
       </Box>
       <Box mt={2}>
         <Typography>

@@ -62,7 +62,7 @@ function LocationContent() {
               <ExpansionPanelDetails>
                 <Box m={1} display={{ xs: 'none', md: 'block' }}>
                   <img
-                    src="/atacama.jpeg"
+                    src="./images/atacama.jpeg"
                     alt="llam location"
                     style={{ width: '100%' }}
                   />
@@ -94,7 +94,7 @@ function LocationContent() {
               <ExpansionPanelDetails>
                 <Box m={1} display={{ xs: 'none', md: 'block' }}>
                   <img
-                    src="/bolivia.jpeg"
+                    src="./images/bolivia.jpeg"
                     alt="llam location"
                     style={{ width: '100%' }}
                   />
@@ -123,7 +123,7 @@ function LocationContent() {
               <ExpansionPanelDetails>
                 <Box m={1} display={{ xs: 'none', md: 'block' }}>
                   <img
-                    src="/peru.jpeg"
+                    src="./images/peru.jpeg"
                     alt="llam location"
                     style={{ width: '100%' }}
                   />
@@ -155,7 +155,7 @@ function LocationContent() {
               <ExpansionPanelDetails>
                 <Box m={1} display={{ xs: 'none', md: 'block' }}>
                   <img
-                    src="/peru1.jpeg"
+                    src="./images/peru1.jpeg"
                     alt="llam location"
                     style={{ width: '100%' }}
                   />
@@ -185,7 +185,7 @@ function LocationContent() {
               <ExpansionPanelDetails>
                 <Box m={1} display={{ xs: 'none', md: 'block' }}>
                   <img
-                    src="/newzealand.jpeg"
+                    src="./images/newzealand.jpeg"
                     alt="llam location"
                     style={{ width: '100%' }}
                   />
