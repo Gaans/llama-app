@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/llama-app/static/css/main.9ffb8a4a.chunk.css",
-    "main.js": "/llama-app/static/js/main.8c1e6673.chunk.js",
-    "main.js.map": "/llama-app/static/js/main.8c1e6673.chunk.js.map",
+    "main.js": "/llama-app/static/js/main.8e6d416e.chunk.js",
+    "main.js.map": "/llama-app/static/js/main.8e6d416e.chunk.js.map",
     "runtime-main.js": "/llama-app/static/js/runtime-main.7a35941b.js",
     "runtime-main.js.map": "/llama-app/static/js/runtime-main.7a35941b.js.map",
-    "static/js/2.39e0fe6c.chunk.js": "/llama-app/static/js/2.39e0fe6c.chunk.js",
-    "static/js/2.39e0fe6c.chunk.js.map": "/llama-app/static/js/2.39e0fe6c.chunk.js.map",
+    "static/js/2.3740b2d5.chunk.js": "/llama-app/static/js/2.3740b2d5.chunk.js",
+    "static/js/2.3740b2d5.chunk.js.map": "/llama-app/static/js/2.3740b2d5.chunk.js.map",
     "index.html": "/llama-app/index.html",
-    "precache-manifest.f4931a344196e678cff1168c033adec8.js": "/llama-app/precache-manifest.f4931a344196e678cff1168c033adec8.js",
+    "precache-manifest.4b5dfc5d336bd8f22f9b70f26993a9cf.js": "/llama-app/precache-manifest.4b5dfc5d336bd8f22f9b70f26993a9cf.js",
     "service-worker.js": "/llama-app/service-worker.js",
     "static/css/main.9ffb8a4a.chunk.css.map": "/llama-app/static/css/main.9ffb8a4a.chunk.css.map",
-    "static/js/2.39e0fe6c.chunk.js.LICENSE": "/llama-app/static/js/2.39e0fe6c.chunk.js.LICENSE"
+    "static/js/2.3740b2d5.chunk.js.LICENSE": "/llama-app/static/js/2.3740b2d5.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.7a35941b.js",
-    "static/js/2.39e0fe6c.chunk.js",
+    "static/js/2.3740b2d5.chunk.js",
     "static/css/main.9ffb8a4a.chunk.css",
-    "static/js/main.8c1e6673.chunk.js"
+    "static/js/main.8e6d416e.chunk.js"
   ]
 }
