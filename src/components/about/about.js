@@ -32,8 +32,7 @@ function Aboutpara() {
           <Typography variant={'body2'} align="justify">
             Hi! I'm Ganesh, I am a Computer Science graduate student at UC
             Riverside. I have about 3 years work experience in Samsung R&amp;D,
-            India. I have worked on designing and building many web dashboards
-            and love to create responsive websites. I have passion to learn new
+            India. I have passion to learn new
             technologies and implement them for a revelant problem.
           </Typography>
         </Box>
