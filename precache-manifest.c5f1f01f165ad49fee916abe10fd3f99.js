@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f53593c713d70cb910887966a423f049",
+    "revision": "75e40bbee4b3e5debffd664435c6913a",
     "url": "/llama-app/index.html"
   },
   {
-    "revision": "aa35bd00734b529648a5",
+    "revision": "ad27907562a027fe011d",
     "url": "/llama-app/static/css/main.5bed5427.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/llama-app/static/js/2.943e7bac.chunk.js.LICENSE"
   },
   {
-    "revision": "aa35bd00734b529648a5",
-    "url": "/llama-app/static/js/main.bea97fb5.chunk.js"
+    "revision": "ad27907562a027fe011d",
+    "url": "/llama-app/static/js/main.d778767b.chunk.js"
   },
   {
     "revision": "e029d4176baa637ee55e",
