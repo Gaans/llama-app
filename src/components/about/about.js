@@ -37,15 +37,6 @@ function Aboutpara() {
             technologies and implement them for a revelant problem.
           </Typography>
         </Box>
-        <Box mt={3}>
-          <Typography variant={'body2'} align="justify">
-            Today we are living in a world, which is ruled by web apps. Web apps
-            are increasingly getting complex and added to that it has to be
-            responsive. I believe front-end is equally a complex system to
-            design and develop when compared to back-end. Plus Front-end web
-            development is all about creativity and creative problem-solving.
-          </Typography>
-        </Box>
       </Box>
       <Box mt={2}>
         <Typography variant={'h4'} align="center">
